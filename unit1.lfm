@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 742
+  Height = 930
+  Top = 81
+  Width = 1102
+  Caption = 'Form1'
+  ClientHeight = 930
+  ClientWidth = 1102
+  LCLVersion = '2.2.0.4'
+  object InputMemo: TMemo
+    Left = 16
+    Height = 456
+    Top = 168
+    Width = 376
+    TabOrder = 0
+  end
+  object OutputMemo: TMemo
+    Left = 624
+    Height = 456
+    Top = 168
+    Width = 376
+    TabOrder = 1
+  end
+  object RunButton: TButton
+    Left = 408
+    Height = 41
+    Top = 272
+    Width = 192
+    Caption = 'Do Magic'
+    OnClick = DoStuffClick
+    TabOrder = 2
+  end
+  object Quit: TToggleBox
+    Left = 408
+    Height = 41
+    Top = 352
+    Width = 192
+    Caption = 'Exit'
+    OnClick = QuitClick
+    TabOrder = 3
+  end
+end
