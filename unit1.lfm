@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 863
+  Height = 470
+  Top = 179
+  Width = 868
+  Caption = 'Form1'
+  ClientHeight = 470
+  ClientWidth = 868
+  LCLVersion = '2.0.12.0'
+  object MatrixSizeValueEdit: TEdit
+    Left = 216
+    Height = 23
+    Top = 40
+    Width = 136
+    TabOrder = 0
+  end
+  object MatrixSizeQuery: TLabel
+    Left = 32
+    Height = 15
+    Top = 48
+    Width = 93
+    Caption = 'Enter Matrix Size: '
+    ParentColor = False
+  end
+  object ResultVector: TStringGrid
+    Left = 544
+    Height = 32
+    Top = 160
+    Width = 504
+    ColCount = 1
+    ColumnClickSorts = True
+    DefaultColWidth = 55
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+  object ResultDeclarationLabel: TLabel
+    Left = 544
+    Height = 15
+    Top = 48
+    Width = 38
+    Caption = 'Result: '
+    ParentColor = False
+  end
+  object ConfirmButton: TButton
+    Left = 216
+    Height = 34
+    Top = 96
+    Width = 136
+    Caption = 'Confirm'
+    OnClick = ConfirmButtonClick
+    TabOrder = 2
+  end
+  object MeanDeclaration: TLabel
+    Left = 544
+    Height = 15
+    Top = 280
+    Width = 36
+    Caption = 'Mean: '
+    ParentColor = False
+  end
+  object RandomFillButton: TButton
+    Left = 32
+    Height = 34
+    Top = 96
+    Width = 120
+    Caption = 'Fill In Randomly'
+    OnClick = RandomFillButtonClick
+    TabOrder = 3
+  end
+  object InputMatrix: TStringGrid
+    Left = 8
+    Height = 240
+    Top = 160
+    Width = 504
+    ColCount = 9
+    DefaultColWidth = 55
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 9
+    TabOrder = 4
+    OnSetEditText = OnSetEditText
+  end
+  object MeanPlaceholder: TLabel
+    Left = 600
+    Height = 15
+    Top = 280
+    Width = 56
+    Caption = 'Wawawaw'
+    ParentColor = False
+  end
+end
